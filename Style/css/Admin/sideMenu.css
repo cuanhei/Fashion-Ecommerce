@@ -23,3 +23,17 @@
 .activeSideMenu{
     background-color: #ededed;
 }
+
+@media (max-width: 1200px) {
+    #sideMenu > div > a > p{
+        display: none;
+    }
+    #sideMenu > div > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        display: none;
+    }
+}
