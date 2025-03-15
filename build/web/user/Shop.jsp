@@ -1,0 +1,58 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../Style/css/style.css">
+    <link rel="stylesheet" href="../Style/css/User/shop.css">
+    <title>Shop</title>
+</head>
+<body class="bg-light">
+    
+    <%@ include file="Header.jsp" %>
+    
+    <!--Search Bar-->
+     <form class="searchBar container-sm bg-white shadow-sm mt-3 mb-1 mx-auto rounded-pill" action="" method="get">
+        <input type="text" placeholder="Name">
+        <input type="submit" value="Search">
+    </form>
+
+    <div class="d-flex container-sm p-sm-0 py-2 ps-1 py-sm-3">
+        <a class="btn-primary btn btn-sm me-1" href="#">Men</a>
+        <a class="btn-secondary btn btn-sm me-1">Women</a>
+        <a class="btn-primary btn btn-sm me-1">Shirt</a>
+        <a class="btn-secondary btn btn-sm me-1">Pants</a>
+    </div>
+    
+    <div class="container-sm mx-auto bg-white shadow-sm rounded row productContainer p-lg-2 mb-4">
+        <div class="col-sm-5 d-flex justify-content-center align-items-center">
+            <img class="productImg" src="../../Img/Icon/shirt.png" alt="">
+        </div>
+        <div class="col-sm-7 d-flex flex-column justify-content-between">
+            <div>
+                <h2>OffWhite shirt</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel repellat, culpa placeat ut a qui voluptatem praesentium ipsam incidunt. Magni optio sequi commodi officiis dignissimos temporibus eum consequuntur cum voluptatum.</p>
+                <div class="d-flex mt-2">
+                    <p class="badge rounded-pill text-bg-primary me-1">Clothes</p>
+                    <p class="badge rounded-pill text-bg-primary me-1">Clothes</p>
+                    <p class="badge rounded-pill text-bg-primary me-1">Clothes</p>
+                </div>
+            </div>
+            <div class="justify-content-between d-flex">
+                <div class="d-flex flex-column py-3">
+                    <h6>RM 100.00</h6>
+                    <small><i class="text-gray">Date Released : 5 June 2024</i></small>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a class="btn btn-sm btn-outline-primary" href="../Customer/ProductDetails.html">More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+
+</body>
+</html>

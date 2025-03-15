@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="../Style/css/User/header.css">
+<!--Header-->
+<header class="w-100 shadow-sm py-2 bg-white">
+    <div class="container-sm d-flex justify-content-sm-between justify-content-center align-items-center">
+        <!--Logo-->
+        <img src="../Img/Logo/logo.png" id="logoImg">
+
+        <!--Menus-->
+        <div class="d-flex justify-content-between align-items-center bg-white" id="headerMenuContainer">
+            <a href=""><img src="../Img/Icon/home.png" alt="" class="iconImg ms-sm-3"></a>
+            <a href=""><img src="../Img/Icon/shop.png" alt="" class="iconImg ms-sm-3 opacity-50"></a>
+            <a href=""><img src="../Img/Icon/cart.png" alt="" class="iconImg ms-sm-3 opacity-50"></a>
+            <a href=""><img src="../Img/Icon/inbox.png" alt="" class="iconImg ms-sm-3 opacity-50"></a>
+            <!-- <a href=""><img src="../../Img/Icon/guest.png" alt="" class="iconImg ms-sm-3 opacity-50"></a> -->
+            <a href=""><img src="https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg" alt="" class="smallProfileImg rounded-pill ms-sm-3 shadow-sm"></a>
+        </div>
+    </div>
+</header>
