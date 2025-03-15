@@ -1,9 +1,0 @@
-
-.staffContainer{
-    width: 23%;
-}
-@media (max-width: 575px) {
-    .staffContainer{
-        width: 100%;
-    }
-}
