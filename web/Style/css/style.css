@@ -1,3 +1,14 @@
+body{
+    padding-top: 5vh;
+}
+.adminBody{
+    padding-top: 0;
+}
+
+#main{
+    animation: slideInUp 0.3s ease;
+}
+
 .page{
     margin-top: 5.5vh;
     margin-left: calc(12%);
@@ -6,6 +17,7 @@
 }
 .maxPageHeight{
     min-height: 90vh;
+    overflow-y: hidden;
 }
 
 .w-80, .w-80-sm{
@@ -44,9 +56,12 @@ hr{
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    overflow-y: hidden;
 }
 .popUpContent{
     animation: enlarge 0.5s;
+    z-index: 11;
 }
 
 
@@ -127,7 +142,11 @@ small{
     width: 4vh;
 }
 
-
+.notification{
+    display: flex;
+    animation: slideInDown;
+    z-index:1;
+}
 
 
 
@@ -287,20 +306,85 @@ select {
     border-radius: 0.5vh;
     background-color: #f0f0f0;
     color: #333;
-  }
+}
   
-  /* Style the dropdown arrow */
-  select::-ms-expand {
-    display: none; /* Remove default arrow on IE Edge */
-  }
-  
-  select::-webkit-scrollbar {
-    display: none; /* Remove scrollbar on Chrome/Safari */
-  }
+/* Style the dropdown arrow */
+select::-ms-expand {
+  display: none; /* Remove default arrow on IE Edge */
+}
 
+select::-webkit-scrollbar {
+  display: none; /* Remove scrollbar on Chrome/Safari */
+}
+
+.slideInDown{
+    animation: slideInDown 0.3s ease;
+}
+
+.enlarge{
+    animation: enlarge 0.3s ease;
+}
+  
+@keyframe opacity{
+    0%  { opacity: 0;}
+    100%{ opacity: 1;}
+}
 @keyframes enlarge {
     0%  { scale: 0;}
     100%{ scale: 1;}
+}
+
+@keyframes grow {
+    from {
+        height: 0%;
+    }
+    to {
+        height:100%;
+    }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @media (max-width: 575px) {
@@ -308,6 +392,7 @@ select {
         padding-bottom: 10vh;
     }
     .adminBody{
+        padding-top: 0;
         padding-bottom: 0;
     }
     .w-80-sm {

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+     <!-- Define initialization parameters -->
+    <context-param>
+        <param-name>companyName</param-name>
+        <param-value>APLUS</param-value>
+    </context-param>
+    <context-param>
+        <param-name>companyEmail</param-name>
+        <param-value>APlus@aplus.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>copyrightText</param-name>
+        <param-value>© 2025 APLUS Sdn Bhd</param-value>
+    </context-param>
+    
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error/404.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error/500.jsp</location>
+    </error-page>
+    
+    <servlet>
+        <servlet-name>CustomerServlet</servlet-name>
+        <servlet-class>Controller.CustomerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CustomerDetailsServlet</servlet-name>
+        <servlet-class>Controller.CustomerDetailsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>Controller.ProductServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProductDetailsServlet</servlet-name>
+        <servlet-class>Controller.ProductDetailsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StaffServlet</servlet-name>
+        <servlet-class>Controller.StaffServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerServlet</servlet-name>
+        <url-pattern>/admin/Customer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CustomerDetailsServlet</servlet-name>
+        <url-pattern>/admin/CustomerDetails</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/admin/Product</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductDetailsServlet</servlet-name>
+        <url-pattern>/admin/ProductDetails</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StaffServlet</servlet-name>
+        <url-pattern>/admin/Staff</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

@@ -1,4 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <link rel="stylesheet" href="../Style/css/Admin/header.css">
 <!--Header-->
 <header class="w-100 shadow-sm d-flex align-items-center bg-white">
@@ -7,12 +8,13 @@
         <img src="../Img/Logo/logo.png" id="logoImg">
 
         <!--Menus-->
-        <div class="d-flex justify-content-between align-items-center" id="headerMenuContainer">
-            <img src="https://sm.askmen.com/t/askmen_in/article/f/facebook-p/facebook-profile-picture-affects-chances-of-gettin_fr3n.1200.jpg" alt="" class="smallProfileImg shadow-sm me-2">
+        <a href="Profile.jsp" class="d-flex justify-content-between align-items-center text-decoration-none" id="headerMenuContainer">
+            <img src="${loggedAcc.imgpath != null ? loggedAcc.imgpath : '../Img/Profile/NoProfile.png'}" alt="" class="smallProfileImg shadow-sm mx-1">
             <div class="d-flex align-items-start flex-column">
-                <p class="text-gray"><b>LIM CUAN HEI</b></p>
-                <p class="text-gray"><small><i>cuanhei@gmail.com</i></small></p>
+                <p class="text-gray"><b><jsp:getProperty name="loggedAcc" property="username" /></b></p>
+                <p class="text-gray"><small><i>${loggedAcc.person.email}</i></small></p>
             </div>
-        </div>
+        </a>
     </div>
 </header>
+            

@@ -1,0 +1,17 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 4 May 2025, 3:37:47 pm
+    Author     : LIM CUAN HEI
+*/
+
+#reviewMainContainer{
+    height: 67vh;
+    overflow-y: auto;
+}
+.reviewImg{
+    height: 10vh;
+    width: 10vh;
+}

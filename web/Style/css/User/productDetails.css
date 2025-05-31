@@ -1,7 +1,10 @@
 .sizeBtn{
     min-width: 5vh;
 }
-
+.disableSizeBtn{
+    min-width: 5vh;
+    cursor: not-allowed;
+}
 .reviewImg{
     height: 10vh;
     width: 10vh;

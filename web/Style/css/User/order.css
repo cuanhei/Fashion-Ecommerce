@@ -1,0 +1,42 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 2 May 2025, 7:00:45 pm
+    Author     : LIM CUAN HEI
+*/
+
+#ordersMainContainer{
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.order{
+    opacity:0;
+}
+
+.orderAnimation{
+    animation: enlarge 0.3s ease;
+    opacity:1;
+}
+
+.star-rating {
+  direction: rtl;
+  display: inline-flex;
+}
+.star-rating input {
+  display: none;
+}
+.star-rating label {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+}
+.star-rating input:checked ~ label {
+  color: #ffc107;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #ffc107;
+}

@@ -3,29 +3,84 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/user/SignIn.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/User/home.css</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/Product.jsp</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/User/header.css</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/user/Inbox.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Model/Productcategories.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/User/productDetails.css</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/Admin/header.css</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/HomeServlet.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/ProductDetailsServlet.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/StaffDetails.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/OrderServlet.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/user/Header.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/js/User/signUp.js</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/ShopServlet.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/Staff.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/js/User/payment.js</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/Admin/sideMenu.css</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/UserReview.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/ProductServlet.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/Header.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/Admin/product.css</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Model/Reviewreply.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/Order.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Model/Account.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/user/Order.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/User/header.css</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/Admin/order.css</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Model/Review.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/user/Home.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/ReviewServlet.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/user/Shop.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/user/SignUp.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/SignOutServlet.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Model/Orders.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Model/Product.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Model/Category.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/SignInServlet.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/DashboardServlet.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/UserProductDetailsServlet.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/js/Admin/review.js</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/js/User/order.js</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/js/Admin/order.js</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/user/SignIn.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/js/User/productDetails.js</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Model/Productsize.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Model/Orderlist.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/Admin/productDetails.css</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/StaffDetailsServlet.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/user/Cart.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Model/Cart.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/Profile.jsp</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/SideMenu.jsp</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/user/SignUp.jsp</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/Staff.jsp</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/User/shop.css</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/js/User/cart.js</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/ProductDetails.jsp</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/Customer.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/CustomerServlet.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/FileManager.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/SignUpServlet.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/CustomerDetails.jsp</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/user/ProductDetails.jsp</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/Header.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/PaymentServlet.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Model/Person.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/user/Payment.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/UpdateProfileServlet.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/js/js.js</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/Admin/header.css</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Model/CartProduct.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/Dashboard.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/Admin/review.css</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/UserOrderServlet.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/error/404.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/ProductDetails.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/User/shop.css</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/Admin/dashboard.css</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/Customer.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/CustomerDetailsServlet.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/StaffServlet.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/admin/Review.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/User/order.css</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Model/Reviewimg.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/error/500.jsp</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/src/java/Controller/CartServlet.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/user/Profile.jsp</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/JavaEcommerce/web/Style/css/style.css</file>
         </group>
     </open-files>
 </project-private>
