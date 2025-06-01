@@ -1,0 +1,151 @@
+CREATE TABLE PersonalDetails (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    Name VARCHAR(255),
+    Email VARCHAR(255),
+    IC VARCHAR(50),
+    Address VARCHAR(255),
+    BirthDate DATE,
+    Gender VARCHAR(10),
+    Contact VARCHAR(50)
+);
+
+CREATE TABLE Account (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    Username VARCHAR(255) UNIQUE,
+    Password VARCHAR(255),
+    DateCreated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    ImgPath VARCHAR(255)
+);
+
+CREATE TABLE Membership (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    Name VARCHAR(255),
+    Description VARCHAR(255),
+    DiscountRate DECIMAL(5,2),
+    MinSpend DECIMAL(10,2),
+    Color VARCHAR(50)
+);
+
+CREATE TABLE Customer (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    Status VARCHAR(50),
+    MembershipID INT,
+    AccountID INT,
+    PersonalID INT,
+    FOREIGN KEY (MembershipID) REFERENCES Membership(ID),
+    FOREIGN KEY (AccountID) REFERENCES Account(ID),
+    FOREIGN KEY (PersonalID) REFERENCES PersonalDetails(ID)
+);
+
+CREATE TABLE Admin (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    Salary DECIMAL(10,2),
+    IsManager BOOLEAN,
+    AccountID INT,
+    PersonalID INT,
+    FOREIGN KEY (AccountID) REFERENCES Account(ID),
+    FOREIGN KEY (PersonalID) REFERENCES PersonalDetails(ID)
+);
+
+CREATE TABLE Inbox (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    Title VARCHAR(255),
+    Details VARCHAR(1000),
+    Date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE Category (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    Name VARCHAR(255),
+    Description VARCHAR(1000)
+);
+
+CREATE TABLE Size (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    Name VARCHAR(50)
+);
+
+CREATE TABLE Product (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    Name VARCHAR(255),
+    Description VARCHAR(1000),
+    SellingPrice DECIMAL(10,2),
+    SupplierPrice DECIMAL(10,2),
+    Stock INT,
+    SizeID INT,
+    ImgPath VARCHAR(255),
+    File3DPath VARCHAR(255),
+    FOREIGN KEY (SizeID) REFERENCES Size(ID)
+);
+
+CREATE TABLE ProductCategory (
+    ProductID INT,
+    CategoryID INT,
+    PRIMARY KEY (ProductID, CategoryID),
+    FOREIGN KEY (ProductID) REFERENCES Product(ID),
+    FOREIGN KEY (CategoryID) REFERENCES Category(ID)
+);
+
+CREATE TABLE Payment (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    PaymentMethod VARCHAR(100),
+    DiscountAmount DECIMAL(10,2),
+    TotalAmount DECIMAL(10,2),
+    DatePurchased TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE OrderTransaction (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    CustomerID INT,
+    PaymentID INT,
+    ShippingFee DECIMAL(10,2),
+    Status VARCHAR(50),
+    DateReleased TIMESTAMP,
+    FOREIGN KEY (CustomerID) REFERENCES Customer(ID),
+    FOREIGN KEY (PaymentID) REFERENCES Payment(ID)
+);
+
+CREATE TABLE OrderList (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    OrderTransactionID INT,
+    ProductID INT,
+    Quantity INT,
+    FOREIGN KEY (OrderTransactionID) REFERENCES OrderTransaction(ID),
+    FOREIGN KEY (ProductID) REFERENCES Product(ID)
+);
+
+CREATE TABLE Review (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    CustomerID INT,
+    ProductID INT,
+    Rate INT CHECK (Rate BETWEEN 1 AND 5),
+    Details VARCHAR(1000),
+    DatePosted TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (CustomerID) REFERENCES Customer(ID),
+    FOREIGN KEY (ProductID) REFERENCES Product(ID)
+);
+
+CREATE TABLE ReviewImg (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    ReviewID INT,
+    ImgPath VARCHAR(255),
+    FOREIGN KEY (ReviewID) REFERENCES Review(ID)
+);
+
+CREATE TABLE ReviewReply (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    ReviewID INT,
+    AdminID INT,
+    Message VARCHAR(1000),
+    Date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (ReviewID) REFERENCES Review(ID),
+    FOREIGN KEY (AdminID) REFERENCES Admin(ID)
+);
+
+CREATE TABLE Stock (
+    ID INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    ProductID INT,
+    Quantity INT,
+    LastUpdated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (ProductID) REFERENCES Product(ID)
+);
