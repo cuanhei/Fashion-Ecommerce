@@ -29,14 +29,6 @@ A role-based E-Commerce platform with distinct functionality for **guests**, **c
 
 ---
 
-## 🧭 Role-Based Navigation
-
-- **Guest** → Public pages (e.g., home, product listings, register)
-- **Customer** → Redirected to the **User Dashboard** after login
-- **Staff/Manager** → Redirected to the **Admin Dashboard** after login
-
----
-
 ## 🛠️ Features Overview
 
 | Feature                | Guest | Customer | Staff | Manager |
